@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Prénom Nom</title>
+  <meta name="description" content="CV professionnel de Prénom Nom">
+  <style>
+    :root{--bg:#0b0d0e;--panel:#111516;--text:#f5f7f7;--muted:#aab2b2;--accent:#d7ff2f;--line:#2a3031}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:#e9eceb;color:#111;line-height:1.55}
+    .page{width:min(100% - 32px,960px);margin:32px auto;background:var(--bg);color:var(--text);box-shadow:0 20px 70px rgba(0,0,0,.15);border-radius:18px;overflow:hidden}
+    .hero{padding:48px 52px 32px;background:radial-gradient(circle at 85% 10%,rgba(215,255,47,.18),transparent 28%),linear-gradient(135deg,#080a0b,#0c1011 55%,#101516);border-bottom:1px solid var(--line)}
+    .eyebrow{color:var(--accent);letter-spacing:.25em;text-transform:uppercase;font-weight:700;font-size:12px;margin-bottom:10px}
+    h1{margin:0;font-size:clamp(38px,6vw,62px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase}
+    .role{margin:14px 0 18px;font-size:20px;font-weight:700;color:#fff}
+    .contacts{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px}
+    .contacts a,.link{color:var(--accent);text-decoration:none}
+    .content{display:grid;grid-template-columns:1.45fr .8fr;gap:28px;padding:34px 52px 52px}
+    section{margin-bottom:30px}
+    h2{margin:0 0 14px;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+    h3{margin:0;font-size:18px;line-height:1.2}
+    p{margin:8px 0 0}.muted{color:var(--muted)}
+    .project,.experience,.education{padding:18px 0;border-top:1px solid var(--line)}
+    .project:first-of-type,.experience:first-of-type,.education:first-of-type{border-top:0;padding-top:0}
+    ul{margin:10px 0 0;padding-left:20px} li{margin:6px 0}
+    .tag{display:inline-block;padding:5px 9px;margin:5px 5px 0 0;border:1px solid #394042;border-radius:999px;color:#e8eeee;font-size:12px;background:#14191a}
+    .sidebar{border-left:1px solid var(--line);padding-left:28px}
+    .link{display:block;margin:7px 0;word-break:break-word}
+    .footer{padding:18px 52px 26px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    @media (max-width:760px){.hero,.content,.footer{padding-left:24px;padding-right:24px}.content{grid-template-columns:1fr}.sidebar{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:28px}}
+    @media print{body{background:#fff}.page{width:100%;margin:0;border-radius:0;box-shadow:none}.hero,.content,.footer{padding-left:28px;padding-right:28px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">CV · HashCode Reboot</div>
+      <h1>PRÉNOM NOM</h1>
+      <div class="role">Intitulé du poste / métier recherché</div>
+      <div class="contacts">
+        <span>Ville, Pays</span><span>email@example.com</span><span>+229 XX XX XX XX</span>
+        <a href="https://github.com/votre-pseudo">GitHub</a>
+        <a href="https://linkedin.com/in/votre-profil">LinkedIn</a>
+        <a href="https://votre-pseudo.github.io">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div>
+        <section>
+          <h2>Profil</h2>
+          <p>Développeur·se / profil tech <strong>[junior / intermédiaire]</strong> passionné·e par <strong>[domaines]</strong>. Je construis des solutions <strong>[web / data / mobile / automatisation]</strong> et je transforme des problèmes concrets en projets simples, utiles et maintenables.</p>
+          <p><strong>Objectif :</strong> [1 phrase sur le type d'opportunité recherchée.]</p>
+        </section>
+
+        <section>
+          <h2>Projets</h2>
+          <article class="project">
+            <h3>[Nom du projet]</h3><p class="muted">[Type de projet] · [Technologies]</p>
+            <ul><li>[Problème ou besoin auquel le projet répond.]</li><li>[Ce que vous avez construit / automatisé / amélioré.]</li><li>[Résultat concret.]</li></ul>
+            <p><a class="link" href="https://github.com/votre-pseudo/nom-du-repo">Repository ↗</a></p>
+          </article>
+          <article class="project">
+            <h3>[Nom du projet]</h3><p class="muted">[Type de projet] · [Technologies]</p>
+            <ul><li>[Description courte orientée résultat.]</li><li>[Votre contribution principale.]</li><li>[Résultat ou apprentissage.]</li></ul>
+            <p><a class="link" href="https://github.com/">Repository ↗</a></p>
+          </article>
+          <article class="project">
+            <h3>[Nom du projet]</h3><p class="muted">[Type de projet] · [Technologies]</p>
+            <ul><li>[Description courte.]</li><li>[Fonctionnalité ou problème traité.]</li><li>[Résultat.]</li></ul>
+            <p><a class="link" href="https://github.com/">Repository ↗</a></p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Expérience</h2>
+          <article class="experience"><h3>[Poste] — [Entreprise / Organisation]</h3><p class="muted">[Ville, Pays] · [Mois AAAA – Mois AAAA]</p><ul><li>[Action + résultat]</li><li>[Action + résultat]</li><li>[Action + résultat]</li></ul></article>
+          <article class="experience"><h3>[Poste / Stage / Freelance] — [Entreprise]</h3><p class="muted">[Ville, Pays] · [Mois AAAA – Mois AAAA]</p><ul><li>[Contribution principale]</li><li>[Résultat / impact]</li></ul></article>
+        </section>
+
+        <section>
+          <h2>Formation</h2>
+          <article class="education"><h3>[Diplôme / Formation]</h3><p class="muted">[Établissement] · [Année]</p><p>[Spécialité, mention ou sujet pertinent.]</p></article>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <section><h2>Compétences</h2><div><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Markdown</span><span class="tag">GitHub Actions</span></div></section>
+        <section><h2>Certifications</h2><p>[Certification] — [Organisme], [Année]</p><p>[Formation] — [Organisme], [Année]</p></section>
+        <section><h2>Langues</h2><p><strong>Français :</strong> [Niveau]</p><p><strong>Anglais :</strong> [Niveau]</p><p><strong>[Autre] :</strong> [Niveau]</p></section>
+        <section><h2>Liens</h2><a class="link" href="https://github.com/votre-pseudo">github.com/votre-pseudo</a><a class="link" href="https://linkedin.com/in/votre-profil">linkedin.com/in/votre-profil</a><a class="link" href="https://votre-pseudo.github.io">votre-pseudo.github.io</a></section>
+        <section><h2>Centres d'intérêt</h2><p class="muted">[Open Source] · [Communautés tech] · [Entrepreneuriat] · [Autre]</p></section>
+      </aside>
+    </div>
+
+    <footer class="footer">HashCode Reboot · Apprendre aujourd'hui. Construire demain.</footer>
+  </main>
+</body>
+</html>
